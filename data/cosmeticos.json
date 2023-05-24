@@ -1,0 +1,58 @@
+[
+ {
+  "id": 1,
+  "nombre": "Polvos ",
+  "tono": "tipo2",
+  "precio": 12000,
+  "oferta": "si",
+   "stock": 10
+ },
+ {
+   "id": 2,
+   "nombre": "Rubor ",
+   "tono": "rosa",
+   "precio": 16000,
+   "oferta": "si",
+   "stock": 25
+ },
+ {
+  "id": 3,
+  "nombre": "Base",
+  "tono": "tipo3",
+  "precio": 14000,
+  "oferta": "si",
+    "stock": 13
+ },
+ {
+  "id": 4,
+  "nombre": "sombras ",
+  "tono": "calidos",
+  "precio": 25000,
+  "oferta": "no",
+   "stock": 0
+ },
+ {
+  "id": 5,
+  "nombre": "crema hidratante ",
+  "tono": "",
+  "precio": 22000,
+  "oferta": "no",
+   "stock": 16
+ },
+ {
+   "id": 6,
+   "nombre": "delineador ",
+   "tono": "Negro",
+   "precio": 15000,
+   "oferta": "no",
+   "stock": 0
+ },
+ {
+  "id": 7,
+  "nombre": "labial",
+  "tono": "rojo",
+  "precio": "14000",
+  "oferta": "si",
+   "stock": 14
+ }
+]
