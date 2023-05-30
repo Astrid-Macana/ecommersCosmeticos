@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madame Wolker</title>
+     <%- include ("./partials/head") -%>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Productos</a>
-                </li>
-                <li>
-                    <a href="#">Usuario</a>
-                </li>
-                <li>
-                    <a href="#">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Contactos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+   <%- include ("./partials/header") -%>
     <main>
-        <ul>
+        <section class="sec-promo">
+       
+          
+          <div class="container-promo">
             <% productos.forEach(producto => { %>
                 <div>
                     <%= producto.nombre %>
@@ -44,11 +27,10 @@
                     <%= producto.stock %>
                 </div>
             <% }) %>
-        </ul>
+          </div>
+        </section7>
     </main>
     <a href="/create">Create product</a>
-    <footer>
-        <p>Derechos reservados &copy; 2023</p>
-    </footer>
+    <%-include ("./partials/footer") -%>
 </body>
 </html>

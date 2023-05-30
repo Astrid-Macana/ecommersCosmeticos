@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion de Producto</title>
+</head>
+<body>
+    <div class = "cajacelesteregistro"></div>
+    <div class = "tituloregistro">
+    <h2>Completa tus datos</h2>
+    </div>
+    <form class = "listadoregistro" action = "/products/<%=editProduct.id %>?_method=PATCH" method = "POST">
+            <div class = "cajaregistro">
+            <div class = "camposregistro">
+                <label for="nombre">Nombre</label><br>
+                <input class="ingresodato" value = "<%= editProduct.nombre %>" type="text" id="nombre" name="nombre" required>
+             </div>        
+            <div class = "camposregistro">
+                <label for="tono">Tono</label><br>
+                <input class="ingresodato" value = "<%= editProduct.tono %>" type="text" id="tono" name="tono" required>
+            </div> 
+            <div class = "camposregistro">
+                <label for="precio">Precio</label><br>
+                <input class="ingresodato" value = "<%= editProduct.precio %>" type="text" id="precio" name="precio" required>
+            </div>
+            
+            <div class = "camposregistro">
+                <label for="memoria">stock</label><br>
+                <input class="ingresodato" value = "<%= editProduct.stock %>" type="text" id="stock" name="stock">
+            </div> 
+        
+            <div  class = "camposregistro" style ="display:flex; flex-direction:column">
+                <label style="margin-bottom:7px" for="oferta">Esta en Oferta:</label>
+                <% if (editProduct.oferta === "si") { %> 
+                <p><input type="radio" checked value="Si" name ="oferta"> Si</p>
+                <p><input type="radio" value="No" name ="oferta"> No</p>
+                <% } else { %>
+                <p><input type="radio" value="Si" name ="oferta"> Si</p>
+                <p><input type="radio" checked value="No" name ="oferta"> No</p>
+                <% } %>
+            </div> 
+           
+
+
+            <div class ="cajabotones">
+
+                <div>
+                    <input type="submit" value="Enviar" class = "boton">
+                </div>
+                
+                
+                <div>
+                    <a href = "/products/<%=editProduct.id%>"><button class = "boton">Regresar</button></a>
+                </div>
+                </div> 
+                       
+    </form>
+</body>
+</html>
