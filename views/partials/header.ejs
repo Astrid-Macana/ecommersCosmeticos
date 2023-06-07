@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<header class="header">
-    <h1>Madame Walker</h1>
+<!-- <header class="header">
+     <h1>madame walker</h1>
 
 <nav clas="navigation" id="main-navigation">
 	<a href="#">Ofertas</a>
@@ -14,4 +14,34 @@
 </nav>
 
 
+</header> -->
+<!-- <AlpineJS para gestionar el evento Clic -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> 
+
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
+  <!-- Logo -->
+  <div class="header__logo">
+ <h1>Madame walker</h1>
+  </div>
+  <!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true">Menu</button>
+  <!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">Volver</button>
+    </div>
+    <!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Registrate</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Ingresa</a></li>
+	  <li class="nav__item"><a href="#" class="nav__link">Tu compra</a></li>
+	  <li class="nav__item"><a href="#" class="nav__link">Contactanos</a></li>
+    </ul>
+  </nav>
+  <!-- Fin Navegador -->
 </header>
+<!-- Fin Header -->

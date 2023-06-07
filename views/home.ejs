@@ -8,29 +8,33 @@
     <main>
         <section class="sec-promo">
        
-          
+      
           <div class="container-promo">
-            <% productos.forEach(producto => { %>
+           
+            
+            <% topCincoVendidos.forEach(producto => { %>
+                <a href = "/productos/<%=producto.id%>">
+                <img class="img" src="/image/<%=producto.image%>">
                 <div>
                     <%= producto.nombre %>
                 </div>
                 <div>
                     <%= producto.tono %>
                 </div>
-                <div>
-                    <%= producto.precio %>
-                </div>
-                <div>
+               
+                 <div class="precio">$ <%=toThousand(producto.precio)%></div>
+                 <div>
                     <%= producto.oferta %>
                 </div>
                  <div>
                     <%= producto.stock %>
                 </div>
+                <button class="boton-agregar-carrito">Agregar al carrito</button>
             <% }) %>
           </div>
-        </section7>
+        </section>
     </main>
-    <a href="/create">Create product</a>
+    <a href="/productos/create">Create product</a>
     <%-include ("./partials/footer") -%>
 </body>
 </html>

@@ -7,27 +7,28 @@
     <title>Edicion de Producto</title>
 </head>
 <body>
+    <%- include ("../partials/header") -%>
     <div class = "cajacelesteregistro"></div>
     <div class = "tituloregistro">
     <h2>Completa tus datos</h2>
     </div>
-    <form class = "listadoregistro" action = "/products/<%=editProduct.id %>?_method=PATCH" method = "POST">
+    <form class = "listadoregistro" action = "/productos/<%=editProduct.id %>?_method=PATCH" method = "POST">
             <div class = "cajaregistro">
             <div class = "camposregistro">
                 <label for="nombre">Nombre</label><br>
-                <input class="ingresodato" value = "<%= editProduct.nombre %>" type="text" id="nombre" name="nombre" required>
+                <input class="ingresodato" value = "<%= editProduct.nombre %>" type="text" id="nombre" name="nombre" >
              </div>        
             <div class = "camposregistro">
                 <label for="tono">Tono</label><br>
-                <input class="ingresodato" value = "<%= editProduct.tono %>" type="text" id="tono" name="tono" required>
+                <input class="ingresodato" value = "<%= editProduct.tono %>" type="text" id="tono" name="tono" >
             </div> 
             <div class = "camposregistro">
                 <label for="precio">Precio</label><br>
-                <input class="ingresodato" value = "<%= editProduct.precio %>" type="text" id="precio" name="precio" required>
+                <input class="ingresodato" value = "<%= editProduct.precio %>" type="text" id="precio" name="precio" >
             </div>
             
             <div class = "camposregistro">
-                <label for="memoria">stock</label><br>
+                <label for="stock">stock</label><br>
                 <input class="ingresodato" value = "<%= editProduct.stock %>" type="text" id="stock" name="stock">
             </div> 
         
@@ -49,13 +50,18 @@
                 <div>
                     <input type="submit" value="Enviar" class = "boton">
                 </div>
-                
+                                <div>
+                    <a href = "/productos/<%=editProduct.id%>/editImage"><button class = "boton">Editar Imagenes</button></a>
+                </div>
                 
                 <div>
-                    <a href = "/products/<%=editProduct.id%>"><button class = "boton">Regresar</button></a>
+                    <a href = "/productos/<%=editProduct.id%>"><button class = "boton">Regresar</button></a>
                 </div>
                 </div> 
                        
     </form>
+     <!-- COMIENZO FOOTER -->
+
+<%- include ("../partials/footer") -%>
 </body>
 </html>

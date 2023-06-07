@@ -17,41 +17,17 @@
                 </div>
                
                 <div class = "botones_detalle">
-                    <button class = "boton">Comprar Ahora</button>
-                    <button class = "boton">Agregar al carrito</button>
                     
+                    <!-- <a href = "/products/<%=product.id%>/editImage"><button class = "boton">Editar Imagenes</button></a> -->
                     <a href = "/productos/<%=product.id%>/edit"><button class = "boton">Editar Producto</button></a>
-                    <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+                    <form action="/productos/<%=product.id %>?_method=DELETE" method="POST">
                         <button type="submit" class = "boton">Eliminar</button>
                     </form>
                 </div>
             </section>
             </div>
-            <div class = "detalleymarcas">
-            <section class ="detallecompleto">
-                <div class="encabezado_contenido_detalle_prod">
-                    <div class = "solapas_contenido_detalle_prod">Descripción</div>
-                    <div class = "solapas_contenido_detalle_prod">Opcionales</div>
-                    <div class = "solapas_contenido_detalle_prod">Aplicaciones</div>
-                </div>
-                <div class ="contenido_detalle">
-                    <div class = "titulos_contenido_detalle_prod">Nombre
-                    </div>
-                    <div class = "contenido_detalle_prod">Tono
-                        <%=product.tono%>
-                    </div>
-
-                    <div class = "titulos_contenido_detalle_prod">Precio
-                    </div>
-                    <div class = "contenido_detalle_prod">
-                        <%=product.precio%>
-                    </div>
-
-                    <div class = "titulos_contenido_detalle_prod">Oferta
-                    </div>
-                    <div class = "contenido_detalle_prod">
-                        <%=product.oferta%>
-                    </div>
+            
+               
 
                     
         </main>

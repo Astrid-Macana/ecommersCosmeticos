@@ -1,82 +1,52 @@
 [
  {
-  "id": "favicon.ico",
-  "nombre": "Polvos ",
-  "tono": "tipo2",
-  "precio": 12000,
-  "oferta": "si",
-  "stock": 10
- },
- {
-  "id": 2,
-  "nombre": "Rubor ",
-  "tono": "rosa",
-  "precio": 16000,
-  "oferta": "si",
-  "stock": 25
- },
- {
-  "id": 3,
-  "nombre": "Base",
-  "tono": "tipo3",
-  "precio": 14000,
-  "oferta": "si",
-  "stock": 13
- },
- {
-  "id": 4,
-  "nombre": "sombras ",
-  "tono": "calidos",
-  "precio": 25000,
-  "oferta": "no",
-  "stock": 0
- },
- {
-  "id": 5,
-  "nombre": "crema hidratante ",
-  "tono": "",
-  "precio": 22000,
-  "oferta": "no",
-  "stock": 16
- },
- {
   "id": 6,
-  "nombre": "delineador ",
-  "tono": "Negro",
-  "precio": 15000,
-  "oferta": "no",
-  "stock": 0
+  "nombre": "brillito",
+  "tono": "rosado",
+  "precio": "20000",
+  "stock": 0,
+  "oferta": "No",
+  "imagenBanner": " ",
+  "image": "img1.PNG"
  },
  {
   "id": 7,
   "nombre": "labial",
   "tono": "rojo",
-  "precio": "14000",
+  "precio": 14000,
   "oferta": "si",
-  "stock": 14
+  "stock": 14,
+  "imagenBanner": " ",
+  "image": "img1.PNG"
  },
  {
   "id": 8,
   "nombre": "sombras",
   "tono": "pastel",
-  "precio": "25000",
+  "precio": 25000,
   "oferta": "no",
-  "stock": 0
+  "stock": 0,
+  "imagenBanner": " ",
+  "image": "img1.PNG"
  },
  {
   "id": 9,
-  "nombre": "Andres",
-  "tono": "blanco",
-  "precio": "1000000",
-  "oferta": "si",
-  "stock": 0
+  "nombre": "pestañina",
+  "tono": "negro ",
+  "precio": "20000",
+  "oferta": "Si",
+  "stock": "5",
+  "imagenBanner": " ",
+  "image": "Rose.jpg"
  },
  {
   "id": 10,
-  "nombre": "astro",
-  "tono": "pastel",
-  "precio": "1000000000",
-  "oferta": "si",
-  "stock": "10"
+  "nombre": "Andres",
+  "tono": "negro ",
+  "precio": "20000",
+  "oferta": "Si",
+  "stock": "5",
+  "imagenBanner": " ",
+  "image": "Rose.jpg"
  }
 ]
