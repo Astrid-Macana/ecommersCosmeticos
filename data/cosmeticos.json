@@ -1,29 +1,29 @@
 [
  {
   "id": 6,
-  "nombre": "brillito",
-  "tono": "rosado",
+  "nombre": "delineador ",
+  "tono": "rasado",
   "precio": "20000",
+  "oferta": "no",
   "stock": 0,
-  "oferta": "No",
   "imagenBanner": " ",
-  "image": "img1.PNG"
+  "image": "img5.PNG"
  },
  {
   "id": 7,
   "nombre": "labial",
   "tono": "rojo",
-  "precio": 14000,
+  "precio": "14000",
   "oferta": "si",
   "stock": 14,
   "imagenBanner": " ",
-  "image": "img1.PNG"
+  "image": "img3.PNG"
  },
  {
   "id": 8,
   "nombre": "sombras",
   "tono": "pastel",
-  "precio": 25000,
+  "precio": "25000",
   "oferta": "no",
   "stock": 0,
   "imagenBanner": " ",
@@ -34,18 +34,66 @@
   "nombre": "pestañina",
   "tono": "negro ",
   "precio": "20000",
-  "oferta": "Si",
+  "oferta": "si",
   "stock": "5",
+  "imagenBanner": " ",
+  "image": "img4.PNG"
+ },
+ {
+  "id": 10,
+  "nombre": "delineador ",
+  "tono": "rasado",
+  "precio": "20000",
+  "oferta": "no",
+  "stock": 0,
+  "imagenBanner": " ",
+  "image": "img6.PNG"
+ },
+ {
+  "id": 11,
+  "nombre": "labial",
+  "tono": "rojo",
+  "precio": "14000",
+  "oferta": "si",
+  "stock": 14,
+  "imagenBanner": " ",
+  "image": "img3.PNG"
+ },
+ {
+  "id": 12,
+  "nombre": "sombras",
+  "tono": "pastel",
+  "precio": "25000",
+  "oferta": "no",
+  "stock": 0,
+  "imagenBanner": " ",
+  "image": "img2.PNG"
+ },
+ {
+  "id": 13,
+  "nombre": "pestañina",
+  "tono": "negro ",
+  "precio": "20000",
+  "oferta": "si",
+  "stock": "5",
+  "imagenBanner": " ",
+  "image": "img4.PNG"
+ },
+ {
+  "id": 14,
+  "nombre": "",
+  "tono": "",
+  "precio": "",
+  "stock": "",
   "imagenBanner": " ",
   "image": "Rose.jpg"
  },
  {
-  "id": 10,
-  "nombre": "Andres",
-  "tono": "negro ",
-  "precio": "20000",
-  "oferta": "Si",
-  "stock": "5",
+  "id": 15,
+  "nombre": "",
+  "tono": "",
+  "precio": "",
+  "stock": "",
   "imagenBanner": " ",
   "image": "Rose.jpg"
  }

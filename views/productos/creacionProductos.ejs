@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <%- include ("../partials/head") -%>
+    <link rel="stylesheet" href="/css/crearPr.css">
     <title>Create</title>
+
 </head>
 <body>
-    <form action="/productos/" method="POST" >
+     <%- include ("../partials/header")-%> 
+
+    <div class="contenedor-form">
+    <form action="/productos/" method="POST" enctype="multipart/form-data" >
         <div>
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="" placeholder="Ingresar nombre">
@@ -23,14 +26,15 @@
             <input type="number" name="precio" id = "" placeholder="Ingresar precio">
         </div>
         <br>
-        <div>
-            <label for="oferta">Oferta</label>
+        <div class = "camposregistro" >
+            
             <label style="margin-bottom:7px" for="oferta">Esta en Oferta:</label>
-                <p><input type="radio" value="Si" name ="oferta"> Si</p>
-                <p><input type="radio" value="No" name ="oferta"> No</p>
+                <p><input class="select" type="radio" value="Si" name ="oferta"> Si</p>
+                <p><input class="select" type="radio" value="No" name ="oferta"> No</p>
+        </div>
         <div>
             <label for="stock">stock</label>
-            <input type="number" name="stock" placeholder="Ingresar cantidad de productos en stock">
+            <input type="number" name="stock" placeholder="Ingresar cantidad en stock">
         </div>
         <br>
          <div class = "camposregistro">
@@ -38,12 +42,14 @@
                 <input type="file" name="image">
             </div> 
         <div>
-            <input type="submit" value="Guardar Producto">
+            <button type="submit" class= "input-enviar" >Guardar Producto</button>
         </div>
         <br>
     </form>
+     </div>
     <div>
         <a href="/">Volver</a>
     </div>
+    <%-include ("../partials/footer") -%>
 </body>
 </html>

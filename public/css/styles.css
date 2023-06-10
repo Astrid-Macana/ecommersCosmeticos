@@ -2,8 +2,43 @@ body {
   font-size: 12px;
   font-family: sans-serif;
   background-image: url("../image/fm.jpg");
-  background-size:200% ;
+  background-size:225% ;
+   box-sizing: border-box;
 }
+.header__button-nav--open{
+  position: relative;
+	padding: 1.5em 3em;
+	appearance: none;
+	border: 0;
+	background: transparent;
+	color: hsla(348, 76%, 13%, 0.918);
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+	
+	
+	
+}
+.header__button-nav--close{
+  position: relative;
+	padding: 1.5em 3em;
+	appearance: none;
+	border: 0;
+	background: transparent;
+	color: hsla(348, 76%, 13%, 0.918);
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+}
+
 /* .header {
   margin-left: -2px;
 }
@@ -24,71 +59,119 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-} */ */
-.header {
+} */ 
+  .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0;
   left: 0;
   right: 0;
   background: #2aacb8;
-  padding: 1rem;
-}
+  padding: 1rem; */
+} 
+
 h1 {
   text-align: center;
   margin: 40px 0 40px;
   text-align: center;
   font-size: 30px;
-  color: #707076;
+  color: hsla(348, 76%, 13%, 0.918);
   text-shadow: 2px 2px 4px #000000;
   font-family: "Cherry Swash", cursive;
 }
+.mujeres{
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  margin-left: 25px;
+  margin-bottom: 45px;
+}
+.ofertas{
+  position: relative;
+	padding: 1.5em 3em;
+	appearance: none;
+	border: 0;
+	background: transparent;
+	color: hsla(348, 76%, 13%, 0.918);
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+	
+}
 
 
-.container-promo {
+/* .container-promo > div{
+   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+} */ 
+.container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 15px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
 }
-.container-promo.img {
-  width: 90%;
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.container-producto > div {
+  flex:1 1 300px;
+  background:#fff;
+  border: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+.img{
+  padding: 10px;
+  background: #eee;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top:10px;
+}
+ img{
+  height: 100px;
+  width: 150px;
+  object-fit: cover;  /*propiedad CSS se usa para especificar cómo se debe cambiar el tamaño de un 
+  <img> o <video> para que se ajuste a su contenedor. */
 }
 
-.container-promo h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.boton-agregar-carrito {
+	background-color: rgba(255, 0, 217, 0.837);
+	color: rgb(244, 236, 237);
+	font-size: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+  }
+  
+
+
+.descripcionProd span{
+margin-top:auto; 
+text-align: center;
+border-radius:0 0 3px 3px;
+padding: 2px;
+color: #000000;
 }
-.container-promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  justify-content: space-evenly;
-}
-.container-promo .boton-agregar-carrito {
-  background-color: rgba(255, 0, 217, 0.837);
-  color: rgb(244, 236, 237);
-  font-size: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
+
+a {
+      text-decoration: none;
+      outline: none;
+  }
+/* .sec-promo.container-promo:first-child,
+.sec-promo.container-promo:nth-child(2){
+  flex: 2 46%;
+} */
 footer {
   padding: 15px;
 }
@@ -118,9 +201,10 @@ h5 {
 
 
 /* 
----------------------Media Query para computadora-------- */
+---------------------Media Query para Tablet-------- */
 /* Estilos móvil/celular */
 @media all and (max-width: 700px) {
+   
 
   /* Oculta el nav en la parte izquiera */
   .nav {
@@ -160,20 +244,21 @@ h5 {
     text-decoration: none;
     color: black;
   }
-  .sec-promo{
-   display: flex;
-        
-  }
-  .sec-promo.container-promo{
-    flex-wrap: wrap;
-   
+  .container-producto{
+  flex:1 1 50px;
   }
 
 }
 
 /* Estilos Escritorio */
 @media all and (min-width: 701px) {
-
+  .mujeres{
+  height: 500px;
+  width: 600px;
+  object-fit: cover;
+  margin-left: 45px;
+  margin-bottom: 55px;
+}
   /* Oculta botón de abrir o cerrar */
   .nav__button,
   .header__button-nav--open {
@@ -202,4 +287,48 @@ h5 {
   .nav__link:hover {
     opacity: 0.5;
   }
+}
+
+@media (min-width:1024px) {
+.mujeres{
+  height: 300px;
+  width: 800px;
+  object-fit: cover;
+  margin-left: 95px;
+  margin-bottom: 55px;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 60px;
+  color: hsla(348, 76%, 13%, 0.918);
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Cherry Swash", cursive;
+}
+ .nav__link {
+    display: block;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+.crear{
+ font-size: 1.5rem;
+}
+
+footer section div {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+
+h4,p {
+  text-align: center;
+  color: #3d3b3b;
+  font-size: 1.5rem;
+}
 }

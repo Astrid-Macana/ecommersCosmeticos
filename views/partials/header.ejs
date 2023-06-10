@@ -24,17 +24,21 @@
   <div class="header__logo">
  <h1>Madame walker</h1>
   </div>
+ 
   <!-- Boton abrir -->
   <button class="header__button-nav--open" x-on:click="open = true">Menu</button>
+  
+   
   <!-- Navegador -->
   <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
     <!-- Boton cerrar -->
     <div class="nav__button" x-on:click="open = false">
       <button class="header__button-nav--close">Volver</button>
     </div>
+
     <!-- Menu -->
     <ul class="nav__ul">
-      <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+      <li class="nav__item"><a href="/views/home.ejs" class="nav__link">Ofertas</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Registrate</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Ingresa</a></li>

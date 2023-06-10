@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router();
+const uploadFile = require("../middlewares/uploadImage");
 const productosController = require("../controller/productosController");
 
 
@@ -9,7 +10,7 @@ router.get('/',productosController.list);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create',productosController.create);
-router.post('/',productosController.store);
+router.post("/", uploadFile.single('image'), productosController.store);
 
 /*** DETAIL ONE PRODUCT ***/ 
 router.get( '/:id',productosController.detail);

@@ -5,36 +5,43 @@
 </head>
 <body>
    <%- include ("./partials/header") -%>
+  
     <main>
+    <div>
+    <img class="mujeres" src="/image/header.jpg" alt="mujeres">
+   </div>
+   <h1 class="oferta">ofertas</h1>
         <section class="sec-promo">
-       
       
-          <div class="container-promo">
-           
-            
+          <div class="container">
+           <div class="container-producto"></div>
             <% topCincoVendidos.forEach(producto => { %>
+                <div>
                 <a href = "/productos/<%=producto.id%>">
                 <img class="img" src="/image/<%=producto.image%>">
-                <div>
+               </div>
+                <div class="descripcionProd">
                     <%= producto.nombre %>
                 </div>
-                <div>
+                <div class="descripcionProd">
                     <%= producto.tono %>
                 </div>
-               
-                 <div class="precio">$ <%=toThousand(producto.precio)%></div>
-                 <div>
-                    <%= producto.oferta %>
+                 <div class="descripcionProd">
+                $ <%=toThousand(producto.precio)%>
                 </div>
                  <div>
-                    <%= producto.stock %>
+                <span>Oferta :<%= producto.oferta %></span>
+                </div>
+                 <div class="descripcionProd">
+                    <span> stock :<%= producto.stock %></span>
                 </div>
                 <button class="boton-agregar-carrito">Agregar al carrito</button>
             <% }) %>
           </div>
+          
         </section>
     </main>
-    <a href="/productos/create">Create product</a>
+    <a class="crear"href="/productos/create">Crear producto</a>
     <%-include ("./partials/footer") -%>
 </body>
 </html>

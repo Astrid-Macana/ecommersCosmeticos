@@ -15,7 +15,7 @@ const mainController = {
     const masVendidosProducts = productos.sort(function (a, b){
         return (b.cantVendida - a.cantVendida)
     })
-    const topCincoVendidos = masVendidosProducts.slice(0,5)
+    const topCincoVendidos = masVendidosProducts.slice(0,6)
        
     res.render('home',{ productos, inSaleProducts, topCincoVendidos, toThousand });
 	},
