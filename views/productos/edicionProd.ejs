@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <%- include ("../partials/head") -%>
+    <link rel="stylesheet" href="/css/editPro.css">
     <title>Edicion de Producto</title>
 </head>
 <body>
     <%- include ("../partials/header") -%>
-    <div class = "cajacelesteregistro"></div>
-    <div class = "tituloregistro">
-    <h2>Completa tus datos</h2>
+    <main>
     </div>
     <form class = "listadoregistro" action = "/productos/<%=editProduct.id %>?_method=PATCH" method = "POST">
             <div class = "cajaregistro">
@@ -42,17 +39,13 @@
                 <p><input type="radio" checked value="No" name ="oferta"> No</p>
                 <% } %>
             </div> 
-           
-
 
             <div class ="cajabotones">
 
                 <div>
                     <input type="submit" value="Enviar" class = "boton">
                 </div>
-                                <div>
-                    <a href = "/productos/<%=editProduct.id%>/editImage"><button class = "boton">Editar Imagenes</button></a>
-                </div>
+            
                 
                 <div>
                     <a href = "/productos/<%=editProduct.id%>"><button class = "boton">Regresar</button></a>
@@ -60,8 +53,7 @@
                 </div> 
                        
     </form>
-     <!-- COMIENZO FOOTER -->
-
-<%- include ("../partials/footer") -%>
+    </main>
+     <%-include ("../partials/footer") -%>
 </body>
 </html>

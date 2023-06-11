@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ("../partials/head") -%>
+    <link rel="stylesheet" href="/css/deatil.css">
     <title>Detail</title>
 </head>
 <body>
+    <%- include ("../partials/header")-%> 
     <main>
         
     <section class ="cajaprecio_detalle">
         <div class = "foto_detalle_producto_principal">
-                    <img class="principal" src="/image/<%=producto.image%>">
+                    <img class="principal" src="/image/<%=product.image%>">
         </div>
                 <div class ="titulo_detalle_producto">
-                    <%=product.nombre%> <%=product.tono%> <%=product.precio%> | <%=product.oferta%> 
+                    <p>Nombre:<%=product.nombre%></p> 
+                    <p>Tono:<%=product.tono%></p> 
+                    <p>Precio:<%=product.precio%></p> 
+                    <p>Producto en oferta:<%=product.oferta%></p> 
             
                 <div class = "<%= cssStock %>">
                     <%= hayStock %>
@@ -23,17 +26,19 @@
                 <div class = "botones_detalle">
                     
                     <!-- <a href = "/products/<%=product.id%>/editImage"><button class = "boton">Editar Imagenes</button></a> -->
-                    <a href = "/productos/<%=product.id%>/edit"><button class = "boton">Editar Producto</button></a>
+                    <a href = "/productos/<%=product.id%>/edit"><button class = "boton1">Editar Producto</button></a>
                     <form action="/productos/<%=product.id %>?_method=DELETE" method="POST">
-                        <button type="submit" class = "boton">Eliminar</button>
+                        <button type="submit" class = "boton2">Eliminar</button>
                     </form>
                 </div>
             </section>
             </div>
-            
-               
-
                     
         </main>
+     <div>
+        <a href="/">Volver</a>
+    </div>
+
+        <%-include ("../partials/footer") -%>
 </body>
 </html>

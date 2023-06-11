@@ -46,7 +46,7 @@ const productosController = {
       hayStock = " No hay en stock";
       cssStock = "status_stock_no";
     } else {
-      hayStock = "hay" + product.stock + "en stock";
+      hayStock = "hay" +" " + product.stock +" " + "en stock";
       cssStock = "status_stock_si";
     }
     res.render("productos/detail", {

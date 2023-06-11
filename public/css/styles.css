@@ -136,12 +136,15 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
   margin-top:10px;
-}
- img{
   height: 100px;
   width: 150px;
-  object-fit: cover;  /*propiedad CSS se usa para especificar cómo se debe cambiar el tamaño de un 
-  <img> o <video> para que se ajuste a su contenedor. */
+  object-fit: cover;
+}
+ img{
+  /* height: 100px;
+  width: 150px;
+  object-fit: cover;  /*propiedad CSS se usa para especificar cómo se debe cambiar el tamaño de un  */
+  /* <img> o <video> para que se ajuste a su contenedor. */ 
 }
 
 .boton-agregar-carrito {
@@ -184,6 +187,7 @@ footer section {
 footer section div {
   text-align: center;
   padding: 10px;
+ 
 }
 
 footer section div i {
@@ -197,6 +201,7 @@ footer section div i {
 h5 {
   text-align: center;
   color: #3d3b3b;
+   margin-right: 15px;
 }
 
 
@@ -278,24 +283,38 @@ h5 {
 
   .nav__link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     color: black;
     transition: 0.5s;
+    font-size: 0.9rem;
   }
 
   .nav__link:hover {
     opacity: 0.5;
   }
+  footer section div {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+
+h4,p {
+  text-align: center;
+  color: #3d3b3b;
+  font-size: 1.5rem;
+}
 }
 
 @media (min-width:1024px) {
 .mujeres{
   height: 300px;
-  width: 800px;
+  width: 900px;
   object-fit: cover;
-  margin-left: 95px;
+  margin-left: 25%;
   margin-bottom: 55px;
+  justify-content: center;
 }
 h1 {
   text-align: center;

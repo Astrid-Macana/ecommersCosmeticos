@@ -1,0 +1,107 @@
+/* html{
+background-color: rgba(18, 17, 18, 0.4);
+color: rgba(356,356,256,0.);
+} */
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background-image: url("../image/labial.png");
+  background-size:175% ;
+   box-sizing: border-box;
+}
+img{
+    float: left;
+    margin-top: 15px;
+}
+
+.boton1 {
+    float:left;
+	display: block;
+	background-color: #ee52e9;
+	padding: 5px 25px 5px 25px;
+	border: 0;
+	font-size:1em; 
+	color: 	white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 9px;
+    margin-left: 135px;
+}
+.boton2 {
+    float: left;
+	display: block;
+	background-color: #42ed92;
+	padding: 5px 25px 5px 25px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+     font-family: "Roboto", sans-serif;
+     margin-left: 115px;
+}
+.boton1.boton2{
+    display:inline-block;
+}
+form{
+  margin-top: 35px;
+  padding: 35px;
+  max-width: 250px;
+  background-color: #fffdfd;
+  /* margin: 0 auto; */
+}
+p{
+display:block; 
+display:inline-block;
+}
+@media all and (min-width: 701px){
+  form{
+  padding: 35px;
+  max-width: 500px;
+  background-color: #fff9f9;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.principal{
+width: 265px;
+  margin-top: 5px;
+}
+.boton1 {
+    float:left;
+	display: block;
+	background-color: #ee52e9;
+	padding: 15px 45px 10px 45px;
+	border: 0;
+	font-size:1.5em; 
+	color: 	white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 25px;
+    margin-left: 395px;
+}
+.boton2 {
+    float: left;
+	display: block;
+	background-color: #42ed92;
+	padding: 15px 35px 10px 35px;
+	border: 0;
+	font-size: 1.2em; 
+	color: 	white;
+     font-family: "Roboto", sans-serif;
+     margin-left: 335px;
+}
+
+p{
+display:block; 
+
+}
+
+
+}
+
+@media (min-width:1024px){
+   form{
+  padding: 45px;
+  max-width: 500px;
+  background-color: #E7E7E7;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+}
